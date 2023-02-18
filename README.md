@@ -1,2 +1,2 @@
-# KollabMatvey
+# Kollab
 plan: "Add blackjack"
