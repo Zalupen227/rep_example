@@ -6,19 +6,24 @@ using namespace std;
 int main(){
     ifstream fin("test.txt");
     string text;
+    char lol[26];
     long double s;
     s = 1;
     fin >> text;
-    int m;
-    for (int i = 0; i < sizeof(text); i++)
+    char m;
+    int k;
+
+    for (size_t i = 0; i < sizeof(text); i++)
     {
         m = text[i];
-        if (m == 0)
-        {
+        if(m == 0){
             continue;
         }
-        
-        s *= m;
+        k = m;
+        s *= k;
+        lol[k - 64] += 1;
     }
-    cout << s;
+    
+    cout << s << endl;
+    cout << lol << endl;
 }
